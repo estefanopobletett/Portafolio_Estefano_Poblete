@@ -1,7 +1,357 @@
-*{
-    padding: 0;
+```css
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Comfortaa', sans-serif;
-    font-family: 'Comfortaa', sans-serif !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: #f5f1ea;
+    color: #292929;
+}
+
+/* BARRA DE NAVEGACION */
+
+header {
+    background-color: #252832;
+    padding: 15px 45px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.navegar {
+    display: flex;
+    gap: 20px;
+}
+
+.navegar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navegar a:hover {
+    color: #e5a93d;
+}
+
+/* INICIO */
+
+.inicio {
+    height: 560px;
+    background-color: #d7c5b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 10px 10px 0px #252832;
+}
+
+.foto img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* SOBRE MI */
+
+.sobreMi {
+    padding: 90px 12%;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background-color: #fffaf3;
+}
+
+.sobre-texto {
+    max-width: 550px;
+}
+
+.sobre-texto h1 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.sobre-texto p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.sobre-imagen img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #d7c5b1;
+}
+
+/* PROYECTO */
+
+.proyectos {
+    padding: 90px 12%;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #e9dfd3;
+}
+
+.proyecto-texto {
+    max-width: 550px;
+}
+
+.proyecto-texto h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.proyecto-texto h2 {
+    color: #a45c35;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.proyecto-texto p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.proyecto-texto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 13px 22px;
+    background-color: #252832;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.proyecto-texto a:hover {
+    background-color: #a45c35;
+}
+
+.proyecto-imagen img {
+    width: 420px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #a45c35;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #fffaf3;
+}
+
+.habilidades h1 {
+    font-size: 35px;
+}
+
+.habilidades h2 {
+    margin: 40px 0 25px;
+    color: #a45c35;
+}
+
+.lenguajes,
+.idiomas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.lenguaje,
+.idioma {
+    width: 150px;
+    padding: 20px;
+    background-color: #eee4d7;
+    border-radius: 15px;
+}
+
+.lenguaje:hover,
+.idioma:hover {
+    transform: translateY(-5px);
+}
+
+.lenguaje img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.idioma img {
+    width: 75px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.lenguaje p,
+.idioma p {
+    margin-top: 12px;
+}
+
+/* EDUCACION */
+
+.educacion {
+    padding: 85px 10%;
+    text-align: center;
+    background-color: #d7c5b1;
+}
+
+.educacion h1 {
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.educaciones {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.colegio {
+    background-color: white;
+    width: 330px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 0px #252832;
+}
+
+.colegio img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.colegio h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.colegio p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* CURSOS */
+
+.cursos {
+    padding: 85px 10%;
+    text-align: center;
+    background-color: #fffaf3;
+}
+
+.cursos h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.cursos h2 {
+    color: #a45c35;
+    margin-bottom: 12px;
+}
+
+.cursos p {
+    margin-bottom: 30px;
+}
+
+.cursos img {
+    width: 450px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0px #252832;
+}
+
+/* CONTACTO */
+
+footer {
+    padding: 45px 20px;
+    text-align: center;
+    background-color: #252832;
+    color: white;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navegar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sobreMi,
+    .proyectos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .proyecto-imagen img {
+        width: 330px;
+    }
+
+    .inicio {
+        height: 450px;
+    }
+
+    .foto img {
+        width: 230px;
+        height: 230px;
+    }
 }
