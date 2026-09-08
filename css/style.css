@@ -309,7 +309,12 @@ footer {
     background-color: #252832;
     color: white;
 }
-
+footer a{
+    color: white;
+}
+footer a :visited{
+    color: white;
+}
 footer h2 {
     margin-bottom: 20px;
 }
