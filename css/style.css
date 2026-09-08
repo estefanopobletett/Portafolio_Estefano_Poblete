@@ -165,7 +165,8 @@ header {
 }
 
 .proyecto-imagen img {
-    width: 420px;
+    width: 820px;
+    height: 320px;
     max-width: 100%;
     border-radius: 15px;
     box-shadow: 10px 10px 0px #a45c35;
