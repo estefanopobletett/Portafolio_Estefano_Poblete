@@ -49,6 +49,7 @@ header {
 .navegar {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .navegar a {
@@ -365,4 +366,95 @@ footer p {
         width: 230px;
         height: 230px;
     }
+}
+
+
+
+body.dark-mode {
+    background-color: #1e2530;
+    color: #e2e8f0;
+}
+
+
+body.dark-mode .sobreMi,
+body.dark-mode .habilidades,
+body.dark-mode .cursos {
+    background-color: #1e2530;
+}
+
+
+body.dark-mode .proyectos,
+body.dark-mode .educacion {
+    background-color: #171d26;
+}
+
+
+body.dark-mode .proyecto-texto h2,
+body.dark-mode .habilidades h2,
+body.dark-mode .cursos h2 {
+    color: #38bdf8; 
+}
+
+
+body.dark-mode .colegio,
+body.dark-mode .lenguaje,
+body.dark-mode .idioma {
+    background-color: #131821; 
+    color: #ffffff;
+    box-shadow: none; 
+}
+
+
+body.dark-mode .proyecto-imagen img {
+    box-shadow: none;
+}
+
+
+body.dark-mode .navegar a:hover {
+    color: #38bdf8;
+}
+
+
+body.dark-mode .btn-tema {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+body.dark-mode .btn-tema:hover {
+    background-color: #7dd3fc;
+}
+
+
+body.dark-mode .sobre-imagen img {
+    border-color: #131821;
+}
+
+
+body.dark-mode .proyecto-texto a {
+    background-color: #131821;
+    color: #ffffff;
+    border: 1px solid #38bdf8;
+}
+
+body.dark-mode .proyecto-texto a:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+
+body.dark-mode .cursos a,
+body.dark-mode footer a:hover {
+    color: #38bdf8;
+}
+
+
+.btn-tema {
+    background-color: #e5a93d;
+    color: #252832;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
 }
